@@ -1,30 +1,45 @@
-# Agent Skills
+# Verified Spec-Driven Development (VSDD)
 
-A collection of reusable [Agent Skills](https://agentskills.io) for AI-assisted engineering.
+An [Agent Skill](https://agentskills.io) for AI-assisted engineering — a structured workflow that helps engineers build software with AI without outsourcing their thinking.
 
-## Skills
-
-### verified-spec-driven-development
-
-A structured workflow for building software with AI assistance — without outsourcing your thinking. Combines spec-driven development, test-driven development, and adversarial review into a practical step-by-step process.
-
-Based on:
-- [Verified Spec-Driven Development](https://gist.github.com/dollspace-gay/d8d3bc3ecf4188df049d7a4726bb2a00) methodology
-- ["Vibe Coding Does NOT Equal AI-Assisted"](https://www.linkedin.com/pulse/vibe-coding-does-equal-ai-assisted-samuel-gregory-ec9wf/) by Samuel Gregory
+Combines spec-driven development, test-driven development, and adversarial review into a practical step-by-step process.
 
 ## Install
 
+**Claude Code:**
 ```bash
-npx skillsadd adisagar2003/agent-skills
+claude skill add adisagar2003/verified-spec-driven-development
 ```
+
+**Manual (any agent):**
+
+Copy `verified-spec-driven-development/SKILL.md` into your agent's skill directory:
+- Claude Code: `~/.claude/skills/verified-spec-driven-development/SKILL.md`
+- VS Code / Copilot: `.agents/skills/verified-spec-driven-development/SKILL.md`
+- Cursor: `.cursor/skills/verified-spec-driven-development/SKILL.md`
+
+## What It Does
+
+Guides you through six steps for any new feature or project:
+
+1. **Understand** — Use AI to explore the codebase (diagrams, architecture overviews)
+2. **Spec** — You write the spec, AI stress-tests it for gaps
+3. **Layer** — Break work into buildable layers (types -> logic -> API -> UI)
+4. **Build** — Test-first for each layer (Red -> Green -> Refactor)
+5. **Review** — Fresh AI context reviews for blind spots
+6. **Ship** — Harden and deliver
+
+## Based On
+
+- [VSDD Methodology](https://gist.github.com/dollspace-gay/d8d3bc3ecf4188df049d7a4726bb2a00) — The six-phase spec-first, test-first, adversarially-refined pipeline
+- ["Vibe Coding Does NOT Equal AI-Assisted"](https://www.linkedin.com/pulse/vibe-coding-does-equal-ai-assisted-samuel-gregory-ec9wf/) by Samuel Gregory — The distinction between prompting and engineering
 
 ## Compatibility
 
-Works with any AI coding assistant that supports the Agent Skills format:
+Works with any AI coding assistant that supports the [Agent Skills](https://agentskills.io/specification) format:
 - Claude Code
 - VS Code (GitHub Copilot Agent mode)
-- Cursor
-- Windsurf
+- Cursor / Windsurf
 - OpenAI Codex
 
 ## License
