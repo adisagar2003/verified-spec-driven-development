@@ -6,17 +6,41 @@ Combines spec-driven development, test-driven development, and adversarial revie
 
 ## Install
 
-**Claude Code:**
+### Claude Code (personal — available in all projects)
+
 ```bash
-claude skill add adisagar2003/verified-spec-driven-development
+mkdir -p ~/.claude/skills/verified-spec-driven-development
+curl -o ~/.claude/skills/verified-spec-driven-development/SKILL.md \
+  https://raw.githubusercontent.com/adisagar2003/verified-spec-driven-development/main/verified-spec-driven-development/SKILL.md
 ```
 
-**Manual (any agent):**
+### Claude Code (project — shared with your team)
 
-Copy `verified-spec-driven-development/SKILL.md` into your agent's skill directory:
-- Claude Code: `~/.claude/skills/verified-spec-driven-development/SKILL.md`
-- VS Code / Copilot: `.agents/skills/verified-spec-driven-development/SKILL.md`
-- Cursor: `.cursor/skills/verified-spec-driven-development/SKILL.md`
+```bash
+mkdir -p .claude/skills/verified-spec-driven-development
+curl -o .claude/skills/verified-spec-driven-development/SKILL.md \
+  https://raw.githubusercontent.com/adisagar2003/verified-spec-driven-development/main/verified-spec-driven-development/SKILL.md
+```
+
+### VS Code / GitHub Copilot (Agent mode)
+
+```bash
+mkdir -p .agents/skills/verified-spec-driven-development
+curl -o .agents/skills/verified-spec-driven-development/SKILL.md \
+  https://raw.githubusercontent.com/adisagar2003/verified-spec-driven-development/main/verified-spec-driven-development/SKILL.md
+```
+
+### Any other agent
+
+Copy `verified-spec-driven-development/SKILL.md` into your agent's skill directory.
+
+## Usage
+
+Once installed, the skill activates automatically when you start a new feature or project. Or invoke it directly:
+
+```
+/verified-spec-driven-development
+```
 
 ## What It Does
 
@@ -37,7 +61,7 @@ Guides you through six steps for any new feature or project:
 ## Compatibility
 
 Works with any AI coding assistant that supports the [Agent Skills](https://agentskills.io/specification) format:
-- Claude Code
+- [Claude Code](https://code.claude.com/docs/en/skills)
 - VS Code (GitHub Copilot Agent mode)
 - Cursor / Windsurf
 - OpenAI Codex
