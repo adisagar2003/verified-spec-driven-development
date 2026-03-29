@@ -1,5 +1,7 @@
 # Verified Spec-Driven Development (VSDD)
 
+<img width="1400" height="1400" alt="image" src="https://github.com/user-attachments/assets/290de7e7-7da7-4d07-9198-fba7a4defe33" />
+
 An [Agent Skill](https://agentskills.io) for AI-assisted engineering — a structured workflow that helps engineers build software with AI without outsourcing their thinking.
 
 Combines spec-driven development, test-driven development, and adversarial review into a practical step-by-step process.
